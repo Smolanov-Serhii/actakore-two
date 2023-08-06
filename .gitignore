@@ -1,3 +1,4 @@
 /wp-content/themes/aktacore-two/node_modules/
 .idea
-.idea/
+.idea/*
+/.idea/
