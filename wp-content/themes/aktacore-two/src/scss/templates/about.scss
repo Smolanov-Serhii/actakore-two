@@ -1,0 +1,10 @@
+.about{
+  margin-top: 111px;
+  margin-bottom: 113px;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}

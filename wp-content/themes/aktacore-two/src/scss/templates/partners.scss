@@ -1,0 +1,19 @@
+.partners{
+  margin-top: 102px;
+  margin-bottom: 112px;
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -54px;
+  }
+  &__item{
+    width: calc(33.3333% - 54px);
+    text-align: center;
+    margin-right: 54px;
+    margin-bottom: 20px;
+  }
+}

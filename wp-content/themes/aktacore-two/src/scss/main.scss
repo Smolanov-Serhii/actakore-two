@@ -1,0 +1,125 @@
+@import "normalize";
+@import "aos";
+@import "preloader";
+@import "default";
+$transition: 0.2s;
+$px: 0.0520833333333333;
+$rem: 16;
+
+// GENERAL DOCUMENT STYLES
+* {
+  box-sizing: border-box;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  @media all and (max-width: 1400px){
+    font-size: 90%;
+  }
+  @media all and (max-width: 1024px){
+
+  }
+  @media all and (max-width: 768px){
+
+  }
+  @media all and (max-width: 500px){
+
+  }
+}
+body{
+  background-color: #FFFFFF;
+}
+.locked{
+  overflow: hidden;
+}
+img{
+  max-width: 100%;
+}
+main{
+
+}
+.padding-right{
+  padding-right: 100px;
+  @media all and (max-width: 1400px){
+    padding-right: 75px;
+  }
+  @media all and (max-width: 1024px){
+    padding-right: 50px;
+  }
+  @media all and (max-width: 768px){
+    padding-right: 35px;
+  }
+  @media all and (max-width: 500px){
+    padding-right: 20px;
+  }
+}
+.padding-left{
+  padding-left: 100px;
+  @media all and (max-width: 1400px){
+    padding-left: 75px;
+  }
+  @media all and (max-width: 1024px){
+    padding-left: 50px;
+  }
+  @media all and (max-width: 768px){
+    padding-left: 35px;
+  }
+  @media all and (max-width: 500px){
+    padding-left: 20px;
+  }
+}
+.main-container{
+  max-width: 1500px;
+  margin: auto;
+  width: 100%;
+  @extend .padding-left;
+  @extend .padding-right;
+}
+
+.button{
+
+}
+.section-title{
+  position: relative;
+  color: #1D1D1D;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 109.4%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding-left: 37px;
+  &:before{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 8px;
+    height: 100%;
+    background-color: #3B8AFF;
+  }
+}
+.left-part{
+  width: 40%;
+}
+.right-part{
+  width: 60%;
+  padding-left: 20px;
+}
+
+
+
+@import "templates/header";
+@import "templates/banner";
+@import "templates/about";
+@import "templates/products";
+@import "templates/rules";
+@import "templates/partners";
+@import "templates/contacts";
+@import "templates/footer";
+

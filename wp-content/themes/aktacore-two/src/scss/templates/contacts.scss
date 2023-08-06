@@ -1,0 +1,47 @@
+.contacts{
+  margin-top: 112px;
+  padding-top: 36px;
+  padding-bottom: 62px;
+  background-color: #3B8AFF;
+  &__container{
+
+  }
+  &__title{
+    margin-bottom: 62px;
+    color: #FFFFFF;
+    &:before{
+      background-color: #1D1D1D;
+    }
+  }
+  &__maps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 22px;
+  }
+  &__item{
+    width: calc(50% - 10px);
+    &-map{
+      height: 330px;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    &-row{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin-bottom: 14px;
+      svg{
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+      color: #FFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
