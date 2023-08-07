@@ -11,18 +11,34 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 51px;
+    @media all and (max-width: 1024px){
+      flex-direction: column;
+    }
   }
   &__logo{
     text-align: left;
     width: 20%;
+    @media all and (max-width: 1024px){
+      width: auto;
+    }
   }
   &__nav{
     width: 60%;
+    @media all and (max-width: 1024px){
+      width: auto;
+    }
     ul{
       display: flex;
       align-items: center;
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+        margin-top: 30px;
+      }
       li{
         margin: 0 25px;
+        @media all and (max-width: 1024px){
+          margin-bottom: 10px;
+        }
         a{
           color: #FFF;
           font-size: 16px;
@@ -31,6 +47,9 @@
           line-height: normal;
           letter-spacing: 0.4px;
           text-decoration: none;
+          @media all and (max-width: 1024px){
+            font-size: 18px;
+          }
         }
       }
     }
@@ -40,6 +59,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media all and (max-width: 1024px){
+      width: auto;
+      margin-top: 30px;
+    }
     > a{
       margin-right: 17px;
       &:last-child{

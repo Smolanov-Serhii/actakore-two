@@ -1,6 +1,10 @@
 .products{
   margin-bottom: 102px;
   margin-top: 113px;
+  @media all and (max-width: 1024px){
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   &__container{
 
   }
@@ -21,15 +25,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media all and (max-width: 768px){
+      padding: 29px 60px 26px 25%;
+    }
+    @media all and (max-width: 768px){
+      padding: 0 20px 20px 20px;
+    }
     &:last-child{
       min-height: 156px;
       padding: 44px 60px 44px 220px;
       margin-bottom: 0;
+      @media all and (max-width: 768px){
+        min-height: auto;
+        padding: 20px;
+        text-align: center;
+      }
     }
     &-icon{
       position: absolute;
       top: 29px;
       left: 50px;
+      @media all and (max-width: 768px){
+        position: static;
+      }
     }
     &-desc{
       p{
@@ -38,6 +56,9 @@
         font-style: normal;
         font-weight: 400;
         line-height: 141.9%;
+        @media all and (max-width: 500px){
+          font-size: 20px;
+        }
         &:last-child{
           margin-bottom: 0;
         }
@@ -49,6 +70,13 @@
       left: 0;
       height: 100%;
       width: auto;
+      @media all and (max-width: 768px){
+        margin-bottom: 30px;
+        position: static;
+        margin-right: -20px;
+        margin-left: -20px;
+        width: calc(100% + 40px);
+      }
       img{
         height: 100%;
         width: auto;
@@ -64,6 +92,15 @@
       letter-spacing: 0.9px;
       text-transform: uppercase;
       margin-bottom: 14px;
+      @media all and (max-width: 1024px){
+        font-size: 30px;
+      }
+      @media all and (max-width: 768px){
+        font-size: 26px;
+      }
+      @media all and (max-width: 500px){
+        font-size: 20px;
+      }
     }
     &-content{
       position: relative;

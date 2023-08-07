@@ -1,6 +1,10 @@
 .partners{
   margin-top: 102px;
   margin-bottom: 112px;
+  @media all and (max-width: 1024px){
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   &__container{
     display: flex;
     flex-wrap: wrap;
@@ -9,11 +13,35 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -54px;
+    @media all and (max-width: 768px){
+      margin-right: 0;
+      justify-content: space-between;
+    }
   }
   &__item{
     width: calc(33.3333% - 54px);
     text-align: center;
     margin-right: 54px;
     margin-bottom: 20px;
+    @media all and (max-width: 768px){
+      width: calc(50% - 20px);
+      margin-right: 0;
+    }
+    @media all and (max-width: 500px){
+      width: calc(50% - 10px);
+    }
+    &-image{
+      img{
+
+      }
+      @media all and (max-width: 768px){
+        width: calc(50% - 20px);
+        margin-right: 0;
+        text-align: center;
+      }
+      @media all and (max-width: 500px){
+        width: calc(50% - 10px);
+      }
+    }
   }
 }

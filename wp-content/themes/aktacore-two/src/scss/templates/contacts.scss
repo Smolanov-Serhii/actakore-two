@@ -3,6 +3,9 @@
   padding-top: 36px;
   padding-bottom: 62px;
   background-color: #3B8AFF;
+  @media all and (max-width: 1024px){
+    margin-top: 50px;
+  }
   &__container{
 
   }
@@ -21,6 +24,18 @@
   }
   &__item{
     width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    @media all and (max-width: 768px){
+      width: 100%;
+      margin-bottom: 50px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &-adress{
+      flex: 1;
+    }
     &-map{
       height: 330px;
       width: 100%;
@@ -32,6 +47,9 @@
       align-items: center;
       text-decoration: none;
       margin-bottom: 14px;
+      @media all and (max-width: 500px){
+        margin-bottom: 10px;
+      }
       svg{
         width: 24px;
         height: 24px;
@@ -42,6 +60,9 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      @media all and (max-width: 500px){
+        font-size: 14px;
+      }
     }
   }
 }

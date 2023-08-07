@@ -93,6 +93,15 @@ main{
   letter-spacing: 1.2px;
   text-transform: uppercase;
   padding-left: 37px;
+  @media all and (max-width: 1024px){
+    font-size: 42px;
+  }
+  @media all and (max-width: 768px){
+    font-size: 36px;
+  }
+  @media all and (max-width: 500px){
+    font-size: 30px;
+  }
   &:before{
     position: absolute;
     display: block;
@@ -106,10 +115,17 @@ main{
 }
 .left-part{
   width: 40%;
+  @media all and (max-width: 1024px){
+    width: 100%;
+  }
 }
 .right-part{
   width: 60%;
   padding-left: 20px;
+  @media all and (max-width: 1024px){
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 

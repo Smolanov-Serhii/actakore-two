@@ -1,10 +1,17 @@
 .about{
   margin-top: 111px;
   margin-bottom: 113px;
+  @media all and (max-width: 1024px){
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   &__container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
+    @media all and (max-width: 1024px){
+
+    }
   }
 }
